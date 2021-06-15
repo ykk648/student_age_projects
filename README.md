@@ -9,4 +9,7 @@
 - face_recognition
 - huawei_AI+BigData_competetion
 - plate_recognition
-- rader_research
+
+not open-source but locate in MyCodeDisk:  
+
+- rader_research 毫米波雷达相关研究
