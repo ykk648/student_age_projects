@@ -10,6 +10,13 @@
 - huawei_AI+BigData_competetion 华为AI+大数据竞赛 二等奖
 - plate_recognition 基于hyperlpr的车牌识别训练代码，以及[基于PyQt开发的界面程序](https://github.com/ykk648/Hyperlpr_for_Windows)
 - xx_charge_ql_server 基于星星充电的服务器开发
+- [huawei-code-craft-2018](https://github.com/ykk648/huawei-code-craft-2018)
+- [dd-punch](https://github.com/ykk648/dd-punch)
+- [blockchain_app_server](https://github.com/ykk648/blockchain-app-server)
+- [TrafficFlowPrediction](https://github.com/ykk648/TrafficFlowPrediction)
+- [MillionHeroes](https://github.com/ykk648/MillionHeroes)
+- [show-me-the-code-python](https://github.com/ykk648/show-me-the-code-python)
+
 
 not open-source but locate in MyCodeDisk:  
 

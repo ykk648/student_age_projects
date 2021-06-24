@@ -1,6 +1,11 @@
 ## using brain waves to drive cars
 
-National Undergraduate Innovation Program 国创比赛
+National Undergraduate Innovation Program 国创比赛作品
 
-驱动板和功能车图纸：
-MyCodeDisk/brain_waves_drive_cars/相关图纸
+全功能车传感器分布说明：
+
+![全功能车传感器分布说明](./resource/全功能车传感器分布说明.png)
+
+驱动板管脚说明图：
+
+![驱动板管脚说明图](./resource/驱动板管脚.png)
