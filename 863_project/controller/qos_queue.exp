@@ -1,0 +1,7 @@
+#!/usr/bin/expect -f
+set ipAddr 192.168.1.3
+set timeout 1
+spawn /home/xcl/controller/sdn_client $ipAddr
+expect "#*"
+	send "./qos.sh \r"
+expect eof

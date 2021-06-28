@@ -1,0 +1,44 @@
+#!/usr/bin/expect -f
+set ipAddr 192.168.2.1
+set myScript [ lindex $argv 0 ]
+set parameter [ lindex $argv 1 ]
+set addr [ lindex $argv 2 ]
+set timeout 1
+spawn /home/gx/controller/sdn_client $ipAddr
+expect "#*"
+switch $myScript {
+	channel {
+            send "./channel.sh $parameter $addr\r"
+        }
+        maxassoc {
+            send "./maxassoc.sh $parameter $addr\r"
+        }
+        isolate {
+            send "./isolate.sh $parameter $addr\r"
+        }
+        txpower {
+            send "./txpower.sh $parameter $addr\r"
+        }
+	dhcp {
+            send "./dhcp.sh $parameter $addr\r"
+	}
+	wifidisable {
+            send "./wifidisable.sh $parameter $addr\r"
+        }
+	band20k {
+            send "./band20k.sh $addr\r"
+        }
+	band50k {
+            send "./band50k.sh $addr\r"
+        }
+	band100k {
+            send "./band100k.sh $addr\r"
+        }
+	bandfree {
+            send "./bandfree.sh $addr\r"
+        }
+	queue {
+            send "./queue.sh $addr\r"
+        }
+}
+expect eof

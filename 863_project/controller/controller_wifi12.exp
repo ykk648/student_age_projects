@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+set ipAddr 192.168.1.7
+set parameter1 [ lindex $argv 0 ]
+set timeout 1
+spawn /home/xcl/controller/sdn_client $ipAddr
+expect "#*"
+			   
+      send "./wifi.sh $parameter1 \r"
+   
+expect eof

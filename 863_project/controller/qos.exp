@@ -1,0 +1,10 @@
+#!/usr/bin/expect -f
+set ipAddr 192.168.1.3
+set timeout 1
+spawn /home/gx/controller/sdn_client $ipAddr
+set timeout 3
+expect "#*"
+			   
+	send "./qos.sh \r"
+			                
+expect eof

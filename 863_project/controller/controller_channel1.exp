@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+set ipAddr 192.168.1.3
+set parameter1 [ lindex $argv 0 ]
+set timeout 1
+spawn /home/gx/controller/sdn_client $ipAddr
+expect "#*"
+     send "./channel.sh $parameter1 \r"
+			   
+expect eof
