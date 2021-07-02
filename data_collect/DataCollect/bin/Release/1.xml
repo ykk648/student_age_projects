@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Portconfig>
+  <Port0 CommPort="0" BYTS="0" DATAW="0" CHECK="0" STOP="0" />
+  <Port1 CommPort="0" BYTS="0" DATAW="1" CHECK="0" STOP="0" />
+  <Port2 CommPort="0" BYTS="1" DATAW="0" CHECK="1" STOP="0" />
+  <Port3 BYTS="0" DATAW="1" CHECK="0" STOP="1" />
+</Portconfig>

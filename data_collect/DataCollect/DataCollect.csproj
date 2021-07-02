@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7216FB60-F863-4DB8-98A5-F331E7207CDA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataCollect</RootNamespace>
+    <AssemblyName>DataCollect</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>ooopic_1463393562.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collect_From.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Collect_From.Designer.cs">
+      <DependentUpon>Collect_From.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMT.Designer.cs">
+      <DependentUpon>FMT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lib\CollectEvent.cs" />
+    <Compile Include="lib\TCPClient.cs" />
+    <Compile Include="lib\TcpClientWithTimeout.cs" />
+    <Compile Include="Panel\AES_Helper.cs" />
+    <Compile Include="Panel\BasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\BasePanel.Designer.cs">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\CollectPoints.cs" />
+    <Compile Include="Panel\Datadisplay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\Datadisplay.Designer.cs">
+      <DependentUpon>Datadisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\General_Config.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\General_Config.Designer.cs">
+      <DependentUpon>General_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\System_Config.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Panel\System_Config.Designer.cs">
+      <DependentUpon>System_Config.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Units\DataCounter.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\DataCounter.designer.cs">
+      <DependentUpon>DataCounter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\DataReceive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\DataReceive.designer.cs">
+      <DependentUpon>DataReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\DataSend.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\DataSend.Designer.cs">
+      <DependentUpon>DataSend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\ICommunication.cs" />
+    <Compile Include="Panel\MD5_Check.cs" />
+    <Compile Include="Units\NetTCPClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\NetTCPClient.designer.cs">
+      <DependentUpon>NetTCPClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\NetTCPServer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\NetTCPServer.designer.cs">
+      <DependentUpon>NetTCPServer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Units\TabDataReceive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Units\TabDataReceive.designer.cs">
+      <DependentUpon>TabDataReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Panel\XML_Beat.cs" />
+    <Compile Include="Warning.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Warning.Designer.cs">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Collect_From.resx">
+      <DependentUpon>Collect_From.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMT.resx">
+      <DependentUpon>FMT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\BasePanel.resx">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\Datadisplay.resx">
+      <DependentUpon>Datadisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\General_Config.resx">
+      <DependentUpon>General_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Panel\System_Config.resx">
+      <DependentUpon>System_Config.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Units\DataCounter.resx">
+      <DependentUpon>DataCounter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Units\DataReceive.resx">
+      <DependentUpon>DataReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Units\DataSend.resx">
+      <DependentUpon>DataSend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Units\NetTCPClient.resx">
+      <DependentUpon>NetTCPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Units\NetTCPServer.resx">
+      <DependentUpon>NetTCPServer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Units\TabDataReceive.resx">
+      <DependentUpon>TabDataReceive.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Warning.resx">
+      <DependentUpon>Warning.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="config.xml" />
+    <Content Include="en_data.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="heart_beat.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="id_validate.xml" />
+    <Content Include="ooopic_1463393562.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

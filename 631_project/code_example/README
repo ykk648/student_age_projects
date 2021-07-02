@@ -1,0 +1,97 @@
+SIM模块交互
+
+通过串口和SIM模块通信，用AT命令实现功获取信号强度、获取运营商名称、
+设置SIM卡模式、关闭SIM卡网络等功能。
+
+--------------------
+
+int csq_detected(int csq)
+/*
+csq值转换
+csq:get_csq的输出
+*/
+
+void serial_send(int file_descriptor, char *buffer, size_t data_len)
+/*
+串口发送函数
+file_descriptor:文件描述符
+char *buffer:buffer
+size_t data_len:数据长度
+*/
+
+int mod_detected(int mod,StateInfo *stateinfo)
+/*
+模式选择
+mod:mode_selection的输出
+stateinfo：存储结构体
+*/
+
+int open_port(int port)
+/*
+打开串口
+port:串口号
+*/
+
+int get_operator(int fd,StateInfo *stateinfo)
+/*
+获得当前运营商
+fd:串口号
+stateinfo：存储结构体
+*/
+
+int get_csq(int fd,StateInfo *stateinfo)
+/*
+获得当前信号强度
+fd:串口号
+stateinfo：存储结构体
+*/
+
+int get_mod(int fd,StateInfo *stateinfo)
+/*
+获得当前模式
+fd:串口号
+stateinfo：存储结构体
+*/
+
+int mode_selection(int fd,int mode)
+/*
+选择模式
+fd:串口号
+mode:
+2   –  Automatic 
+13  –  GSM Only 
+14  –  WCDMA Only 
+38  –  LTE Only 
+59  –  TDS-CDMA Only 
+9   –  CDMA Only 
+10  –  EVDO Only 
+19  –  GSM+WCDMA Only 
+22  –  CDMA+EVDO Only 
+48  –  Any modes but LTE 
+60  –  GSM+TDSCDMA Only 
+61  –  GSM+TDSCDMA+LTE 
+63  –  GSM+WCDMA+TDSCDMA Only 
+67  –  CDMA+EVDO+GSM+WCDMA+TDSCDMA Only 
+*/
+
+int offline_control(int fd,int isornot)
+/*
+关闭SIM模块网络
+fd:串口号
+isornot:0关闭 1开启
+*/
+
+int set_opt(int fd, int nSpeed, int nBits, char nEvent, int nStop)
+/*
+设置串口属性
+fd:串口号
+nSpeed:波特率
+nBits:数据位
+nEvent:校验位
+nStop:停止位
+*/
+
+void SIM_wifi_state()
+/*
+主函数，循环读取4个模块数据
+*/

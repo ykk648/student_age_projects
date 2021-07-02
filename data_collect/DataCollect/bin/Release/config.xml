@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 通用部分 -->
+  <!-- building_id:楼栋编号gateway_id:采集器编号type:配置信息数据包的类型 -->
+  <common>
+    <building_id>XXXXXX</building_id >
+    <gateway_id>XXX</gateway_id >
+    <type>以2种操作类型之一</type>
+  </common>
+  <!-- 配置信息 -->
+  <!--操作有2种类型           period:表示服务器对采集器采集周期的配置,period子元素有效 period_ack:表示采集器对服务器采集周期配置信息的应答        -->
+  <config operation="period/period_ack">
+    <period>15</period>
+  </config>
+</root>

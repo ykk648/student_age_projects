@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <common>
+    <building_id>123</building_id>
+    <gateway_id>456</gateway_id>
+    <type>notify</type>
+  </common>
+</root>

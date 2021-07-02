@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 通用部分 -->
+  <!--        building_id:楼栋编号       gateway_id:采集器编号       type:能耗远传数据包的类型       -->
+  <common>
+    <building_id>XXXXXX</building_id >
+    <gateway_id>XXX</gateway_id >
+    <type>以下5种操作类型之一</type>
+  </common>
+  <!-- 能耗远传 -->
+  <!-- 操作有4种类型 query:服务器查询数据采集器，不需要子元素 reply:采集器对服务器查询的应答         report:采集器定时上报的能耗数据         continuous:采集器断点续传的能耗数据         continuous_ack:全部续传数据包接收完成后，服务器对断点续传的应答，不 需要子元素      元素有5种类型 sequence元素:采集器向服务器发送数据的序号         parser元素:向服务器发送的数据是否经采集器解析过         time元素:数据采集时间         total元素:断点续传时有效，表示需要断点续传数据包的总数         current元素:断点续传时有效，表示当前断点续传数据包的编号         port元素:计量装置的设备号，具有id属性         function元素:每个计量装置的具体采集功能，具有下列3种属性，           id属性:计量装置的数据采集功能编号（供多功能电能表使用） coding属性:能耗数据分类/分项编码 
+ 
+ 
+          error属性:该功能出现错误的状态码，0表示没有错误 -->
+  <data operation="query/reply/report/continuous/continuous_ack">
+    <sequence>XXXXXXXX</sequence>
+    <parser>yes/no</parser>
+    <time> YYYYMMDDHHMMSS </time>
+    <total>XXX</total>
+    <current>XXX</current>
+    <meter id="1">
+      <function id="1" coding="XXX" error="XXX">数据1</function>
+      <function id="2" coding="XXX" error="XXX">数据2</function>
+    </meter>
+    <meter id="2">
+      <function id="1" coding="XXX" error="XXX">数据1</function>
+      <function id="2" coding="XXX" error="XXX">数据2</function>
+    </meter>
+  </data>
+</root>

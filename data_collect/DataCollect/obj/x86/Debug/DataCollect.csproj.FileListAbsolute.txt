@@ -1,0 +1,19 @@
+D:\C# collect\DataCollect\DataCollect\bin\Debug\DataCollect.exe
+D:\C# collect\DataCollect\DataCollect\bin\Debug\DataCollect.pdb
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Form_Collect.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Panel.DevConfigPanel.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Properties.Resources.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.DataCounter.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.DataReceive.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.DataSend.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.NetTCPServer.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.TabDataReceive.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.exe
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.pdb
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Panel.DataDisPanel.resources
+D:\C# collect\DataCollect\DataCollect\obj\x86\Debug\DataCollect.Units.XMLRead.resources
+C:\Users\zh-709\Desktop\DataCollect623\DataCollect\obj\x86\Debug\DataCollect.exe
+C:\Users\zh-709\Desktop\DataCollect623\DataCollect\obj\x86\Debug\DataCollect.pdb

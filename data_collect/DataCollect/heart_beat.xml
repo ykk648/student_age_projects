@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <common>
+    <building_id>XXXXXX</building_id >
+    <gateway_id>XXX</gateway_id >
+    <type>以下2种操作类型之一</type>
+  </common>
+  <heart_beat operation="notify/time">
+    <time>YYYYMMDDHHMMSS</time>
+  </heart_beat>
+</root>
